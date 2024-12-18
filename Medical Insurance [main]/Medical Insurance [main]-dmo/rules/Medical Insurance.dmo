@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionmodel:DecisionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionmodel="http://com.ibm.rules.studio/model/decisionmodel.ecore">
+  <name>Medical Insurance</name>
+  <uuid>3a5ce06e-80aa-48ba-b734-9eb4a3239a95</uuid>
+  <locale>en_US</locale>
+  <definition><definitions xmlns="http://www.omg.org/spec/DMN/20180521/MODEL/" id="MedicalInsurance" name="Medical Insurance" namespace="">
+    <extensionElements>
+        <locale xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" id="en_US"/>
+    </extensionElements>
+    <inputData id="node_1" name="Emergency Medical Care Coverage">
+        <description>Covers emergency medical services, hospitalization, and treatment following accidents or sudden illnesses.</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the emergency medical care coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_1_ii" name="Emergency Medical Care Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_5" name="Inpatient Hospitalization Coverage">
+        <description>Covers the cost of hospitalization, surgery, and associated medical expenses during an inpatient stay.</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the inpatient hospitalization coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_5_ii" name="Inpatient Hospitalization Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_6" name="Outpatient Medical Coverage">
+        <description>Covers medical services and treatments received on an outpatient basis, such as doctor visits, diagnostics, and minor procedures.</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the outpatient medical coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_6_ii" name="Outpatient Medical Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_7" name="Maternity and Obstetrics Coverage">
+        <description>Covers prenatal care, childbirth, and postnatal care for expectant mothers.</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the maternity and obstetrics coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_7_ii" name="Maternity and Obstetrics Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_8" name="Dental Care Coverage">
+        <description>overs dental treatments, including check-ups, cleanings, fillings, and other dental procedures.
+</description>
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the dental care coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_8_ii" name="Dental Care Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <inputData id="node_9" name="Catastrophic Coverage">
+        <extensionElements>
+            <initialization xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
+                <output bomType="java.lang.String" collection="false" name="the catastrophic coverage"/>
+            </initialization>
+        </extensionElements>
+        <variable id="node_9_ii" name="Catastrophic Coverage" typeRef="java.lang.String"/>
+    </inputData>
+    <decision id="node_0" name="Medical Coverage Options">
+        <description>This Coverage is applicable for parents, Self</description>
+        <extensionElements>
+            <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
+                <input bomType="java.lang.String" collection="false" name="the emergency medical care coverage"/>
+                <input bomType="java.lang.String" collection="false" name="the inpatient hospitalization coverage"/>
+                <input bomType="java.lang.String" collection="false" name="the outpatient medical coverage"/>
+                <input bomType="java.lang.String" collection="false" name="the maternity and obstetrics coverage"/>
+                <input bomType="java.lang.String" collection="false" name="the dental care coverage"/>
+                <input bomType="java.lang.String" collection="false" name="the catastrophic coverage"/>
+                <output bomType="java.lang.String" collection="false" name="the medical coverage options"/>
+                <rule defaultRule="false" href="Medical%20Coverage%20Options/rule-1.drl" kind="BusinessRule" name="rule-1"/>
+                <rule defaultRule="false" href="Medical%20Coverage%20Options/dt-1.dmt" kind="DecisionTable" name="dt-1"/>
+                <rule defaultRule="false" href="node_0/rule-2.drl" kind="BusinessRule" name="rule-2"/>
+            </ruleset>
+        </extensionElements>
+        <variable id="node_0_ii" name="Medical Coverage Options" typeRef="java.lang.String"/>
+        <informationRequirement>
+            <requiredInput href="#node_1"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_5"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_6"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_7"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_8"/>
+        </informationRequirement>
+        <informationRequirement>
+            <requiredInput href="#node_9"/>
+        </informationRequirement>
+    </decision>
+</definitions>
+</definition>
+</com.ibm.rules.studio.model.decisionmodel:DecisionModel>

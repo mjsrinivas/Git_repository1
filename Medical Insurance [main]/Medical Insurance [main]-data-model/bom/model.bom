@@ -1,0 +1,45 @@
+
+package myModel;
+
+
+class EmergencyMedicalCareCoverage
+        property ads.typeId "1"
+        #de.generated
+{
+    int age
+                property ads.attributeId "1"
+                #update;
+    string email
+                property ads.attributeId "2"
+                #update;
+    java.util.List name domain 0,* class string
+                property ads.attributeId "3"
+                property com.fasterxml.jackson.annotation.JsonProperty "name"
+                #update;
+    string phoneNumber
+                property ads.attributeId "4"
+                #update;
+    EmergencyMedicalCareCoverage(int age, 
+        string email, 
+        java.util.List name domain 0,* class string, 
+        string phoneNumber)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    EmergencyMedicalCareCoverage()
+                #dataio.default;
+    void addTo_name(string name)
+                property collectionAttribute "name"
+                #update;
+    void clear_name()
+                property collectionAttribute "name"
+                #update;
+    void removeFrom_name(string name)
+                property collectionAttribute "name"
+                #update;
+    void set_name(java.util.Collection name domain 0,* class string)
+                property collectionAttribute "name"
+                #update;
+}
+

@@ -1,0 +1,17 @@
+
+# myModel.EmergencyMedicalCareCoverage
+myModel.EmergencyMedicalCareCoverage#concept.label = Medical Insurance Care Coverage
+myModel.EmergencyMedicalCareCoverage.EmergencyMedicalCareCoverage(int,java.lang.String,java.util.List,java.lang.String)#phrase.navigation = a new {Medical Insurance Care Coverage} where {0, Age} {1, Email} {2, Name} {3, Phone Number}
+myModel.EmergencyMedicalCareCoverage.addTo_name(java.lang.String)#phrase.action = add {0} to the Names of {this}
+myModel.EmergencyMedicalCareCoverage.age#phrase.action = set the Age of {this} to {Age}
+myModel.EmergencyMedicalCareCoverage.age#phrase.addition_setter = add {Age} to the Age of {this}
+myModel.EmergencyMedicalCareCoverage.age#phrase.navigation = {Age} of {this}
+myModel.EmergencyMedicalCareCoverage.age#phrase.subtraction_setter = subtract {Age} from the Age of {this}
+myModel.EmergencyMedicalCareCoverage.clear_name()#phrase.action = clear the Names of {this}
+myModel.EmergencyMedicalCareCoverage.email#phrase.action = set the Email of {this} to {Email}
+myModel.EmergencyMedicalCareCoverage.email#phrase.navigation = {Email} of {this}
+myModel.EmergencyMedicalCareCoverage.name#phrase.action = set the Names of {this} to {Name}
+myModel.EmergencyMedicalCareCoverage.name#phrase.navigation = {Name} of {this}
+myModel.EmergencyMedicalCareCoverage.phoneNumber#phrase.action = set the Phone Number of {this} to {Phone Number}
+myModel.EmergencyMedicalCareCoverage.phoneNumber#phrase.navigation = {Phone Number} of {this}
+myModel.EmergencyMedicalCareCoverage.removeFrom_name(java.lang.String)#phrase.action = remove {0} from the Names of {this}

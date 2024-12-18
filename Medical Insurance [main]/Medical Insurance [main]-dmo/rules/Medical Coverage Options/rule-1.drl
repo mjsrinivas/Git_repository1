@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>rule-1</name>
+  <uuid>294f7708-1fb7-4423-aece-102652e6e40f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'the emergency medical care coverage' is 'the emergency medical care coverage' 
+	and 'the dental care coverage' is 'the dental care coverage' 
+then
+	set decision to 'the emergency medical care coverage' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

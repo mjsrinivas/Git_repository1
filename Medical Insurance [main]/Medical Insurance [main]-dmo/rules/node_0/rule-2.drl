@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>rule-2</name>
+  <uuid>d4058d9b-4fdc-4e88-9ba6-e7be228c7173</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+	'the emergency medical care coverage' is 'the emergency medical care coverage' 
+	and 'the inpatient hospitalization coverage' is 'the inpatient hospitalization coverage' 
+    and 'the inpatient hospitalization coverage' is 'the emergency medical care coverage' 
+	and 'the outpatient medical coverage' is 'the dental care coverage' 
+    and 'the outpatient medical coverage' is 'the catastrophic coverage'
+	and 'the maternity and obstetrics coverage' is 'the maternity and obstetrics coverage'  
+	and 'the dental care coverage' is 'the dental care coverage' 
+    and 'the dental care coverage' is 'the emergency medical care coverage' 
+	and 'the catastrophic coverage' is 'the catastrophic coverage' 
+    and 'the catastrophic coverage' is 'the emergency medical care coverage' 
+then
+	set decision to decision ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>
