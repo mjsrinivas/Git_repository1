@@ -4,4 +4,13 @@
   <uuid>232c26c4-aea3-4e97-a445-4e6a4bb12a34</uuid>
   <decisionModel href="../rules/Medical%20Insurance.dmo#3a5ce06e-80aa-48ba-b734-9eb4a3239a95"/>
   <targetRuleProject href="../../Medical%20Insurance%20%5Bmain%5D-dmo#9cac5c3b-67b7-42a2-910f-36426ad5a261"/>
+  <tags key="operationDescription">
+    <value><![CDATA[""]]></value>
+  </tags>
+  <tags key="operationName">
+    <value><![CDATA["MedicalInsuranceDecision"]]></value>
+  </tags>
+  <tags key="exposedAtRuntime">
+    <value><![CDATA[true]]></value>
+  </tags>
 </com.ibm.rules.studio.model.decisionservice:Operation>
